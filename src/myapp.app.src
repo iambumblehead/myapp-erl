@@ -1,0 +1,17 @@
+{application, myapp,
+ [
+  {description, "auth application"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications, [kernel,
+                  stdlib,
+                  asn1,
+                  crypto,
+                  public_key,
+                  ssl,
+                  idna,
+                  hackney,
+                  couchbeam]},
+  {mod, { myapp_app, []}},
+  {env, []}
+ ]}.
